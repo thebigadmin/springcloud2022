@@ -21,4 +21,9 @@ public class OrderController {
         return payment;
     }
 
+    @GetMapping("/customer/get/zip")
+    public String getZip(){
+        return myFeign.getZip();
+    }
+
 }

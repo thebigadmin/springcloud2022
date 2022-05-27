@@ -51,4 +51,9 @@ public class PaymentController {
     public String getLB(){
         return serverPort.toString();
     }
+
+    @GetMapping("/get/zip")
+    public String getZip(){
+        return "hello zipkin";
+    }
 }

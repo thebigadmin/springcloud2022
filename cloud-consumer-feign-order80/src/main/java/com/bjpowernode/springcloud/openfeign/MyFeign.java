@@ -13,4 +13,7 @@ public interface MyFeign {
 
     @GetMapping("/payment/get/{id}")
     CommonResult<Payment> getPayment( @PathVariable("id") long id);
+
+    @GetMapping("/get/zip")
+    public String getZip();
 }

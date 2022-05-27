@@ -22,4 +22,9 @@ public class PaymentController {
     public String getTimeOut(@PathVariable("id") Integer id){
         return paymentService.getTimeOut(id);
     }
+
+    @GetMapping("/customer/get/zip")
+    public String getZip(){
+        return paymentService.getZip();
+    }
 }

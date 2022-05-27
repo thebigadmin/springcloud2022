@@ -15,4 +15,7 @@ public interface PaymentService {
 
     @GetMapping("/payment/get/timeout/{id}")
      String getTimeOut(@PathVariable("id") Integer id);
+
+    @GetMapping("/get/zip")
+    public String getZip();
 }

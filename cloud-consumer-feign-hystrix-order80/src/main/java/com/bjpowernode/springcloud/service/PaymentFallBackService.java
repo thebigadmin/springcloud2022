@@ -13,4 +13,9 @@ public class PaymentFallBackService implements PaymentService{
     public String getTimeOut(Integer id) {
         return "null";
     }
+
+    @Override
+    public String getZip() {
+        return null;
+    }
 }
